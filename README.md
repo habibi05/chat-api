@@ -60,3 +60,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Project setup
+```
+composer install
+
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+php artisan jwt:secret
+
+php artisan migrate
+```
+
+## Project run with artisan
+
+```
+php artisan serve
+```
